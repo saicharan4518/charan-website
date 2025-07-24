@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charan's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Charan</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkToggle" title="Toggle Dark Mode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span id="typed-text"></span></h2>
+    <a href="Charan_Resume.pdf" download class="resume-btn">📄 Download Resume</a>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+      <div class="card">
+        <h3>Fake News Detection</h3>
+        <p>Used Spark and Big Data tools to classify fake vs real news articles using social media data.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>A React-based weather checker using OpenWeather API with responsive design.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Charan. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://github.com/">GitHub</a>
+      <a href="https://linkedin.com/in/sai-charan-2b4b0a293">LinkedIn</a>
+      <a href="mailto:charan4sports@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="topBtn" title="Back to Top">⬆️</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
